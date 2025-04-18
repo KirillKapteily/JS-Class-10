@@ -28,26 +28,26 @@ test2(mess);
 
 // namet(foo);
 
-// const arr = [1, 2, 3, 4, 5];
+const arr = [1, 2, 3, 4, 5];
 
-// let total = 0;
-// let ic = 0;
-// function sumArray(arr, callback) {
-//   for (let i = 0; i < arr.length; i++) {
-//     total += arr[i];
-//     ic = arr[0];
-//     ic1 = arr[1];
-//     ic2 = arr[2];
-//     ic3 = arr[3];
-//     ic4 = arr[4];
-//   }
-//   callback(total);
-// }
-// function cb(arr, cb) {
-//   console.log('+' ,ic, ic1, ic2, ic3, ic4, '=', total);
-// }
+let total = 0;
+let ic = 0;
+function sumArray(arr, callback) {
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+    ic = arr[0];
+    ic1 = arr[1];
+    ic2 = arr[2];
+    ic3 = arr[3];
+    ic4 = arr[4];
+  }
+  callback(total);
+}
+function cb(arr, cb) {
+  console.log('+' ,ic, ic1, ic2, ic3, ic4, '=', total);
+}
 
-// sumArray(arr, cb);
+sumArray(arr, cb);
 
 //now fillter test
 // let massive = [1, 2, 3, 4, 5];
@@ -92,12 +92,11 @@ console.log(hello2());
 //task 2
 const myAverageScore = (scores) => {
   let total = 0;
-  let score = [100];
-  for (let i = 0; i < score.length; i++) {
-    total += score[i];
+  for (let i = 0; i < scores.length; i++) {
+    total += scores[i];
   }
 
-  let avarage = total / score.length;
+  let avarage = total / scores.length;
 
 
   // for (element of arr) {
